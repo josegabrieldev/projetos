@@ -81,16 +81,8 @@ section#telefone {
     overflow: auto;
 }
 
-iframe#tela {
-    width: 86%;
-    height: 75%;
-    border: 1px solid #333;
-    position: absolute;
-    top: 81px;
-    left: 22px;
-}
-
-section.lado-esquerdo, .lado-direito {
+section.lado-esquerdo,
+section.lado-direito {
     display: flex;
     flex-direction: column;
     align-items: center;
