@@ -4,51 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociais</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="css/css-index/style.css">
 </head>
 <body>
-    <main>
-        <section id="telefone">
-            <iframe src="paginas/home.html" name="tela" id="tela" frameborder="0"></iframe>
-        </section>
+    <header class="cabecalho">
+        <img src="assets/img/avatar-josegabriel.webp" alt="Foto de José Gabriel, Desenvolvedor Web Front-End">
+        <h1>Olá, eu sou José Gabriel</h1>
+        <h2>Desenvolvedor Web Front-End</h2>
+        <p>Explore minhas redes sociais</p>
+    </header>
 
-        <section id="redes-sociais">
+    <main>
+        <section class="lado-esquerdo">
             <a href="paginas/home.html" target="tela">
-                <img src="imagens/logo-home.jpg" alt="Home">
+                <img src="assets/icons/logo-home.jpg" alt="Icone de uma Casa">
             </a> <br>
 
             <a href="paginas/github.html" target="tela">
-                <img src="imagens/github-logo.png" alt="Logo GitHub">
+                <img src="assets/icons/github-logo.png" alt="Perfil GitHub de José Gabriel">
             </a> <br>
 
             <a href="paginas/linkedin.html" target="tela">
-                <img src="imagens/linkedin-logo.png" alt="LinkedIn">
+                <img src="assets/icons/linkedin-logo.png" alt="Perfil LinkedIn de José Gabriel">
             </a> <br>
 
             <a href="paginas/whatsapp.html" target="tela">
-                <img src="imagens/whatsapp-logo.png" alt="WhatsApp">
+                <img src="assets/icons/whatsapp-logo.png" alt="Contato WhatsApp de José Gabriel">
             </a> <br>
 
             <a href="paginas/gmail.html" target="tela">
-                <img src="imagens/gmail-logo.png" alt="Gmail">
+                <img src="assets/icons/gmail-logo.png" alt="Contato Gmail de José Gabriel">
+            </a> <br>
+        </section>
+
+        <section id="telefone">
+            <!-- Conteúdo será carregado aqui dinamicamente -->
+        </section>
+
+        <section class="lado-direito">
+            <a href="paginas/home.html" target="tela">
+                <img src="assets/icons/logo-home.jpg" alt="Icone de uma Casa">
             </a> <br>
 
             <a href="paginas/instagram.html" target="tela">
-                <img src="imagens/instagram-logo.png" alt="Instagram">
+                <img src="assets/icons/instagram-logo.png" alt="Perfil Instagram de José Gabriel">
             </a> <br>
 
             <a href="paginas/facebook.html" target="tela">
-                <img src="imagens/facebook-logo.png" alt="Facebook">
+                <img src="assets/icons/facebook-logo.png" alt="Perfil Facebook de José Gabriel">
             </a> <br>
 
             <a href="paginas/tiktok.html" target="tela">
-                <img src="imagens/tiktok-logo.png" alt="TikTok">
+                <img src="assets/icons/tiktok-logo.png" alt="Perfil TikTok de José Gabriel">
             </a> <br> 
 
             <a href="paginas/kwai.html" target="tela">
-                <img src="imagens/kwai-logo.png" alt="Kwai">
+                <img src="assets/icons/kwai-logo.png" alt="Perfil Kwai de José Gabriel">
             </a>
         </section>
     </main>
+
+    <footer>
+        <p>Lentamente, mas com estilo. Feito por <strong>José Gabriel</strong> — &copy; 2025</p>
+        <p>"Cada linha de código carrega um sonho escondido."</p>
+    </footer>
+
+    <script>
+        // Quando a página for carregada
+        window.addEventListener('DOMContentLoaded', () => {
+        // Carrega o conteúdo da home.html dentro da section#telefone
+        fetch('paginas/home.html')
+            .then(response => response.text())
+            .then(data => {
+            document.querySelector('#telefone').innerHTML = data;
+            })
+            .catch(error => {
+            console.error('Erro ao carregar a home.html:', error);
+            });
+        });
+    </script>
 </body>
 </html>
