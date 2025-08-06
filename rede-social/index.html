@@ -16,49 +16,51 @@
 
     <main>
         <section class="lado-esquerdo">
-            <a href="paginas/home.html" target="tela">
+            <a href="paginas/home.html">
                 <img src="assets/icons/logo-home.jpg" alt="Icone de uma Casa">
             </a> <br>
 
-            <a href="paginas/github.html" target="tela">
+            <a href="paginas/github.html">
                 <img src="assets/icons/github-logo.png" alt="Perfil GitHub de José Gabriel">
             </a> <br>
 
-            <a href="paginas/linkedin.html" target="tela">
+            <a href="paginas/linkedin.html">
                 <img src="assets/icons/linkedin-logo.png" alt="Perfil LinkedIn de José Gabriel">
             </a> <br>
 
-            <a href="paginas/whatsapp.html" target="tela">
+            <a href="paginas/whatsapp.html">
                 <img src="assets/icons/whatsapp-logo.png" alt="Contato WhatsApp de José Gabriel">
             </a> <br>
 
-            <a href="paginas/gmail.html" target="tela">
+            <a href="paginas/gmail.html">
                 <img src="assets/icons/gmail-logo.png" alt="Contato Gmail de José Gabriel">
             </a> <br>
         </section>
 
         <section id="telefone">
+            <div id="conteudo">
             <!-- Conteúdo será carregado aqui dinamicamente -->
+            </div>
         </section>
 
         <section class="lado-direito">
-            <a href="paginas/home.html" target="tela">
+            <a href="paginas/home.html">
                 <img src="assets/icons/logo-home.jpg" alt="Icone de uma Casa">
             </a> <br>
 
-            <a href="paginas/instagram.html" target="tela">
+            <a href="paginas/instagram.html">
                 <img src="assets/icons/instagram-logo.png" alt="Perfil Instagram de José Gabriel">
             </a> <br>
 
-            <a href="paginas/facebook.html" target="tela">
+            <a href="paginas/facebook.html">
                 <img src="assets/icons/facebook-logo.png" alt="Perfil Facebook de José Gabriel">
             </a> <br>
 
-            <a href="paginas/tiktok.html" target="tela">
+            <a href="paginas/tiktok.html">
                 <img src="assets/icons/tiktok-logo.png" alt="Perfil TikTok de José Gabriel">
             </a> <br> 
 
-            <a href="paginas/kwai.html" target="tela">
+            <a href="paginas/kwai.html">
                 <img src="assets/icons/kwai-logo.png" alt="Perfil Kwai de José Gabriel">
             </a>
         </section>
@@ -69,19 +71,6 @@
         <p>"Cada linha de código carrega um sonho escondido."</p>
     </footer>
 
-    <script>
-        // Quando a página for carregada
-        window.addEventListener('DOMContentLoaded', () => {
-        // Carrega o conteúdo da home.html dentro da section#telefone
-        fetch('paginas/home.html')
-            .then(response => response.text())
-            .then(data => {
-            document.querySelector('#telefone').innerHTML = data;
-            })
-            .catch(error => {
-            console.error('Erro ao carregar a home.html:', error);
-            });
-        });
-    </script>
+    <script src="js/carregar.js"></script>
 </body>
 </html>

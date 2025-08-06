@@ -78,7 +78,18 @@ section#telefone {
     background-size: contain;
 
     position: relative;
-    overflow: auto;
+}
+
+section#telefone > div#conteudo {
+    width: 265px;
+    height: 466px;
+    position: absolute;
+    top: 78px;
+    left: 20px;
+    padding: 10px;
+    overflow-y: auto;
+
+    color: white;
 }
 
 section.lado-esquerdo,
@@ -125,4 +136,23 @@ footer p {
 footer strong {
     color: #00ffd5;
     font-weight: 600;
+}
+
+/* Spinner animado para indicador de carregamento */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #00ffd5;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
