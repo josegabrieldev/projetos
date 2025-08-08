@@ -185,15 +185,20 @@ footer strong {
 }
 
 .erro-carregamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 40px 10px;
-    color: #fff;
-    font-size: 14px;
+    padding: 40% 10px;
+    color: white;
+    font-size: 15px;
 }
 
 .erro-carregamento button {
-    margin-top: 10px;
-    padding: 8px 12px;
+    width: 80%;
+    margin: 15px;
+    padding: 10px;
     background-color: #ff4b4b;
     border: none;
     border-radius: 6px;
