@@ -62,9 +62,9 @@ h2 {
     width: 100%;
     max-width: 311px;
     min-height: 627px;
-    background: url('../assets/fundo-iphone/frame-iphone.png') no-repeat;
+    background: url('../assets/fundos/frame-iphone.png') no-repeat;
     background-size: cover;
-    padding: 2em 1em;
+    padding: 1em;
     margin: 1.5em 0;
     border-radius: 2rem;
 
@@ -76,13 +76,14 @@ h2 {
 }
 /*CONTEÚDO DENTRO DO TELEFONE*/
 #conteudo {
-    width: 100%;
-    max-height: 100%;
+    width: 96%;
+    height: 100%;
+    background: url('../assets/fundos/fundo-degrade.png') no-repeat;
+    background-size: cover;
     font-size: 0.95em;
     text-align: justify;
     line-height: 1.4em;
-    padding: 1em;
-    border-radius: 1em;
+    padding: 4.4em 8px 1.6em 8px;
     overflow-y: auto;
 
     display: flex;
